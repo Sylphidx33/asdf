@@ -1,8 +1,8 @@
 {
-  "title": "Epic Rolls 5e",
-  "description": "A module to make group rolls more engaging with some flair and sound effects. Let your other players spectate the roll and see the results in real time!",
-  "id": "epic-rolls-5e",
-  "version": "5.0.3",
+  "title": "Animated Dice Pack - TheRipper93 Premium Dice (Early Access)",
+  "description": "Pixelize, Dot.Matrix, Liquid Metal and Nano Nexus. A set of animated dice for Dice So Nice! These dice are exclusive to Early Acces Patreons.",
+  "id": "ripper-premium-dice-ea",
+  "version": "2.0.0",
   "authors": [
     {
       "name": "theripper93",
@@ -37,7 +37,7 @@
       "path": "languages/es.json"
     },
     {
-      "lang": "pt-BR",
+      "lang": "pt-br",
       "name": "Portugu\u00eas (Brasil)",
       "path": "languages/pt-br.json"
     },
@@ -45,11 +45,6 @@
       "lang": "it",
       "name": "Italiano",
       "path": "languages/it.json"
-    },
-    {
-      "lang": "cn",
-      "name": "\u4e2d\u6587",
-      "path": "languages/cn.json"
     }
   ],
   "scripts": [],
@@ -60,17 +55,15 @@
     "styles/module.css"
   ],
   "packs": [],
-  "socket": true,
   "url": "https://www.patreon.com/theripper93",
-  "manifest": "https://https://github.com/Sylphidx33/asdf/blob/main/module.json",
+  "manifest": "https://r2.foundryvtt.com/packages-public/ripper-premium-dice-ea/module.json",
   "relationships": {
-    "requires": [],
-    "systems": [
+    "requires": [
       {
-        "id": "dnd5e",
-        "type": "system",
+        "id": "dice-so-nice",
+        "type": "module",
         "compatibility": {
-          "minimum": "4.1.0"
+          "minimum": "5.1.1"
         }
       }
     ]
@@ -79,4 +72,5 @@
     "minimum": "13",
     "verified": "13"
   },
+  "protected": false
 }
