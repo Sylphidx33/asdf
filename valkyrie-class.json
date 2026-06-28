@@ -82,41 +82,19 @@
 				"defaultData": [
 					{
 						"a": [
-							"greatsword|phb"
-						],
-						"b": [
-							{
-								"equipmentType": "weaponMartialMelee"
-							}
-						]
-					},
-					{
-						"a": [
-							"scale mail|phb"
-						],
-						"b": [
-							"leather armor|phb"
-						]
-					},
-					{
-						"a": [
-							{
-								"equipmentType": "weaponSimpleMelee"
-							}
-						],
-						"b": [
-							{
-								"item": "javelin|phb",
-								"quantity": 5
-							}
-						]
-					},
-					{
-						"a": [
+							"greatsword|phb",
+							"scale mail|phb",
+							"equipmentType": "weaponSimpleMelee",
 							"explorer's pack|phb"
 						],
 						"b": [
-							"priest's pack|phb"
+							{
+								"equipmentType": "weaponMartialMelee",
+								"leather armor|phb",
+								"item": "javelin|phb",
+								"quantity": 5,
+								"priest's pack|phb"
+							}
 						]
 					},
 					{
