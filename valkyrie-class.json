@@ -1,0 +1,947 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ThroneOfLies",
+				"abbreviation": "ToL",
+				"full": "Throne of Lies",
+				"authors": [
+					"Sylphid"
+				]
+			}
+		],
+		"dateAdded": 1719468940,
+		"dateLastModified": 1719468940
+	},
+	"classFluff": [
+		{
+			"name": "Valkyrie",
+			"source": "ThroneOfLies",
+			"entries": [
+				"Valkyries draw power from the realms of the gods and harness it to shift the tides of battle and guide souls. Blessed by a deity, a pantheon, or cosmic fate itself, a Valkyrie reaches out to the divine magic of the Outer Planes to bolster their allies and devastate their foes on the front lines.",
+				"Because their power is a divine gift intertwined with martial supremacy, Valkyries typically associate themselves with ancient orders dedicated to specific gods, such as Thor, Loki, or Hel. Harnessing this divine magic requires unyielding willpower and rigorous physical training.",
+				"Not every warrior who prays to the gods is a Valkyrie. Some are simply devout fighters or paladins serving a righteous cause. But few can marshal the raw, cosmic power of life and death on the battlefield the way a Valkyrie can."
+			]
+		}
+	],
+	"class": [
+		{
+			"name": "Valkyrie",
+			"source": "ThroneOfLies",
+			"page": 1,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"con",
+				"wis"
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "full",
+			"preparedSpells": "<$level$> + <$wis_mod$>",
+			"cantripProgression": [
+				2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"heavy",
+					"shields"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"arcana",
+								"history",
+								"insight",
+								"medicine",
+								"perception",
+								"religion",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item greatsword|phb} or (b) any martial melee weapon",
+					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
+					"(a) any simple melee weapon or (b) 5 {@item javelin|phb|javelins}",
+					"(a) an {@item explorer's pack|phb} or (b) a {@item priest's pack|phb}",
+					"A {@item holy symbol|phb}"
+				],
+				"goldAlternative": "155 gp",
+				"defaultData": [
+					{
+						"a": [
+							"greatsword|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartialMelee"
+							}
+						]
+					},
+					{
+						"a": [
+							"scale mail|phb"
+						],
+						"b": [
+							"leather armor|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimpleMelee"
+							}
+						],
+						"b": [
+							{
+								"item": "javelin|phb",
+								"quantity": 5
+							}
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|phb"
+						],
+						"b": [
+							"priest's pack|phb"
+						]
+					},
+					{
+						"_": [
+							"holy symbol|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"wis": 13,
+					"str": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						"shields"
+					],
+					"weapons": [
+						"simple",
+						"martial"
+					]
+				}
+			},
+			"additionalSpells": [
+				{
+					"expanded": {
+						"0": ["booming blade|tce", "green-flame blade|tce", "guidance|phb", "light|phb", "mending|phb", "resistance|phb", "sacred flame|phb", "thaumaturgy|phb", "toll the dead|xge", "word of radiance|xge", "true strike|phb"],
+						"1": ["command|phb", "cure wounds|phb", "divine favor|phb", "divine smite|phb", "searing smite|phb", "shield|phb", "thunderous smite|phb", "zephyr strike|xge"],
+						"2": ["branding smite|phb", "fly|phb", "haste|phb", "mass healing word|phb", "revivify|phb", "spirit shroud|tce", "thunder step|xge"],
+						"4": ["banishment|phb", "death ward|phb", "freedom of movement|phb", "staggering smite|phb"],
+						"5": ["banishing smite|phb", "greater restoration|phb", "holy weapon|xge", "steel wind strike|xge"],
+						"6": ["bifröst cleave|ThroneOfLies", "blade barrier|phb", "heal|phb", "word of recall|phb"],
+						"7": ["crown of stars|xge", "divine word|phb", "echo of gungnir|ThroneOfLies", "resurrection|phb"],
+						"8": ["holy aura|phb", "sunburst|phb", "twilight of the gods|ThroneOfLies"],
+						"9": ["foresight|phb", "judgment of the norns|ThroneOfLies", "mass heal|phb"]
+					}
+				}
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Cantrips Known"
+					],
+					"rows": [
+						[2], [2], [2], [3], [3], [3], [3], [3], [3], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Valkyrie}",
+						"{@filter 2nd|spells|level=2|class=Valkyrie}",
+						"{@filter 3rd|spells|level=3|class=Valkyrie}",
+						"{@filter 4th|spells|level=4|class=Valkyrie}",
+						"{@filter 5th|spells|level=5|class=Valkyrie}",
+						"{@filter 6th|spells|level=6|class=Valkyrie}",
+						"{@filter 7th|spells|level=7|class=Valkyrie}",
+						"{@filter 8th|spells|level=8|class=Valkyrie}",
+						"{@filter 9th|spells|level=9|class=Valkyrie}"
+					],
+					"rowsSpellProgression": [
+						[2, 0, 0, 0, 0, 0, 0, 0, 0],
+						[3, 0, 0, 0, 0, 0, 0, 0, 0],
+						[4, 2, 0, 0, 0, 0, 0, 0, 0],
+						[4, 3, 0, 0, 0, 0, 0, 0, 0],
+						[4, 3, 2, 0, 0, 0, 0, 0, 0],
+						[4, 3, 3, 0, 0, 0, 0, 0, 0],
+						[4, 3, 3, 1, 0, 0, 0, 0, 0],
+						[4, 3, 3, 2, 0, 0, 0, 0, 0],
+						[4, 3, 3, 3, 1, 0, 0, 0, 0],
+						[4, 3, 3, 3, 2, 0, 0, 0, 0],
+						[4, 3, 3, 3, 2, 1, 0, 0, 0],
+						[4, 3, 3, 3, 2, 1, 0, 0, 0],
+						[4, 3, 3, 3, 2, 1, 1, 0, 0],
+						[4, 3, 3, 3, 2, 1, 1, 0, 0],
+						[4, 3, 3, 3, 2, 1, 1, 1, 0],
+						[4, 3, 3, 3, 2, 1, 1, 1, 0],
+						[4, 3, 3, 3, 2, 1, 1, 1, 1],
+						[4, 3, 3, 3, 3, 1, 1, 1, 1],
+						[4, 3, 3, 3, 3, 2, 1, 1, 1],
+						[4, 3, 3, 3, 3, 2, 2, 1, 1]
+					]
+				}
+			],
+			"classFeatures": [
+				"Spellcasting|Valkyrie|ThroneOfLies|1",
+				"Valkyrie's Calling|Valkyrie|ThroneOfLies|1",
+				"Weapon Mastery|Valkyrie|ThroneOfLies|1",
+				"Wings of Battle|Valkyrie|ThroneOfLies|2",
+				{
+					"classFeature": "Valkyrie Subclass|Valkyrie|ThroneOfLies|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Valkyrie|ThroneOfLies|4",
+				"Extra Attack|Valkyrie|ThroneOfLies|5",
+				{
+					"classFeature": "Subclass Feature|Valkyrie|ThroneOfLies|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Valkyrie|ThroneOfLies|8",
+				"Aura of the Valr|Valkyrie|ThroneOfLies|10",
+				{
+					"classFeature": "Subclass Feature|Valkyrie|ThroneOfLies|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Valkyrie|ThroneOfLies|12",
+				"Endless Sky|Valkyrie|ThroneOfLies|14",
+				{
+					"classFeature": "Subclass Feature|Valkyrie|ThroneOfLies|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Valkyrie|ThroneOfLies|16",
+				"Epic Boon|Valkyrie|ThroneOfLies|19",
+				"Avatar of the Valkyries|Valkyrie|ThroneOfLies|20"
+			],
+			"subclassTitle": "Valkyrie Order",
+			"hasFluff": true,
+			"hasFluffImages": false
+		}
+	],
+	"subclass": [
+		{
+			"name": "Order of the Dawn",
+			"shortName": "Dawn",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassFeatures": [
+				"Order of the Dawn|Valkyrie|ThroneOfLies|Dawn|ThroneOfLies|3",
+				"Blinding Aegis|Valkyrie|ThroneOfLies|Dawn|ThroneOfLies|7",
+				"Sun's Champion|Valkyrie|ThroneOfLies|Dawn|ThroneOfLies|11",
+				"Supernova|Valkyrie|ThroneOfLies|Dawn|ThroneOfLies|15"
+			]
+		},
+		{
+			"name": "Order of the Stormbringer",
+			"shortName": "Stormbringer",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassFeatures": [
+				"Order of the Stormbringer|Valkyrie|ThroneOfLies|Stormbringer|ThroneOfLies|3",
+				"Storm Step|Valkyrie|ThroneOfLies|Stormbringer|ThroneOfLies|7",
+				"Call the Tempest|Valkyrie|ThroneOfLies|Stormbringer|ThroneOfLies|11",
+				"Wrath of the Thunderer|Valkyrie|ThroneOfLies|Stormbringer|ThroneOfLies|15"
+			]
+		},
+		{
+			"name": "Order of the Trickster",
+			"shortName": "Trickster",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassFeatures": [
+				"Order of the Trickster|Valkyrie|ThroneOfLies|Trickster|ThroneOfLies|3",
+				"Mirror Dance|Valkyrie|ThroneOfLies|Trickster|ThroneOfLies|7",
+				"Trickster's Shroud|Valkyrie|ThroneOfLies|Trickster|ThroneOfLies|11",
+				"Master of Illusions|Valkyrie|ThroneOfLies|Trickster|ThroneOfLies|15"
+			]
+		},
+		{
+			"name": "Order of the Underworld",
+			"shortName": "Underworld",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassFeatures": [
+				"Order of the Underworld|Valkyrie|ThroneOfLies|Underworld|ThroneOfLies|3",
+				"Spectral Reach|Valkyrie|ThroneOfLies|Underworld|ThroneOfLies|7",
+				"Touch of Death|Valkyrie|ThroneOfLies|Underworld|ThroneOfLies|11",
+				"Hel's Domain|Valkyrie|ThroneOfLies|Underworld|ThroneOfLies|15"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Spellcasting",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 1,
+			"entries": [
+				"As a conduit of divine and cosmic power, you can cast Valkyrie spells.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"You know two cantrips of your choice from the Valkyrie spell list, in addition to the {@spell true strike|XPHB} cantrip granted by your Valkyrie's Calling feature. You learn additional cantrips of your choice at higher levels, as shown in the Cantrips column of the Valkyrie Features table."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"The Valkyrie Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a {@variantrule long rest|XPHB}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"entries": [
+						"You prepare the list of Valkyrie spells that are available for you to cast, choosing from the Valkyrie spell list. When you do so, choose a number of Valkyrie spells equal to your Wisdom modifier + your Valkyrie level (minimum of one spell). The spells must be of a level for which you have spell slots.",
+						"You can change your list of prepared spells when you finish a {@variantrule long rest|XPHB}. Preparing a new list of Valkyrie spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Wisdom is your spellcasting ability for your Valkyrie spells. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Valkyrie spell you cast and when making an attack roll with one."
+					]
+				}
+			]
+		},
+		{
+			"name": "Valkyrie's Calling",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 1,
+			"entries": [
+				"Your divine purpose naturally aligns your strikes with fate itself. You learn the {@spell true strike|XPHB} cantrip, which counts as a Valkyrie spell for you and does not count against your number of cantrips known."
+			]
+		},
+		{
+			"name": "Weapon Mastery",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 1,
+			"entries": [
+				"Your training with weapons allows you to use the Mastery property of two kinds of Simple or Martial weapons of your choice. Whenever you finish a {@variantrule long rest|XPHB}, you can change the kinds of weapons you chose."
+			]
+		},
+		{
+			"name": "Wings of Battle",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 2,
+			"entries": [
+				"As a {@action bonus|XPHB} action, you manifest ghostly wings. For 1 minute, you gain a flying speed equal to your walking speed, and your movement does not provoke opportunity attacks while flying. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a {@variantrule long rest|XPHB}."
+			]
+		},
+		{
+			"name": "Valkyrie Subclass",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 3,
+			"entries": [
+				"You choose your divine path from three ancient orders: Order of the Thunder, Order of the Trickster, or Order of the Underworld. A subclass is a specialization that grants you features at certain Valkyrie levels. For the rest of your career, you gain each of your subclass's features that are of your Valkyrie level or lower."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 4,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify. You gain this feature again at Valkyrie levels 8, 12, and 16."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 5,
+			"entries": [
+				"You can attack twice, instead of once, whenever you take the {@action attack|XPHB} action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks."
+			]
+		},
+		{
+			"name": "Subclass Feature",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 7,
+			"entries": [
+				"You gain a feature from your Valkyrie Subclass."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 8,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify."
+			]
+		},
+		{
+			"name": "Aura of the Valr",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 10,
+			"entries": [
+				"Allies within 15 feet of you have advantage on death saving throws. Whenever an enemy dies within this aura, you gain {@variantrule temporary hit points|XPHB} equal to your Wisdom modifier + your Valkyrie level."
+			]
+		},
+		{
+			"name": "Subclass Feature",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 11,
+			"entries": [
+				"You gain a feature from your Valkyrie Subclass."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 12,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify."
+			]
+		},
+		{
+			"name": "Endless Sky",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 14,
+			"entries": [
+				"Your connection to the heavens becomes absolute. The wings granted by your Wings of Battle feature manifest permanently, granting you a permanent flying speed equal to your walking speed."
+			]
+		},
+		{
+			"name": "Subclass Feature",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 15,
+			"entries": [
+				"You gain a feature from your Valkyrie Subclass."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 16,
+			"entries": [
+				"You gain the {@feat Ability Score Improvement|XPHB} feat or another feat of your choice for which you qualify."
+			]
+		},
+		{
+			"name": "Epic Boon",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 19,
+			"entries": [
+				"You gain an Epic Boon feat or another feat of your choice for which you qualify."
+			]
+		},
+		{
+			"name": "Avatar of the Valkyries",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"level": 20,
+			"entries": [
+				"For 1 minute, you become the pure embodiment of destruction and salvation. Your melee weapon attacks deal an extra {@damage 2d8} radiant damage on a hit. Additionally, your smites shatter the battlefield. Once on each of your turns, when you hit a creature with a melee weapon attack and apply a Valkyrie spell with \"Smite\" in its name, explosive cosmic energy erupts. Each enemy of your choice within 10 feet of the target takes radiant damage equal to {@damage 1d8} per level of the Smite spell cast (no saving throw required). You can't use this feature again until you finish a {@variantrule long rest|XPHB}."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Order of the Dawn",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Dawn",
+			"subclassSource": "ThroneOfLies",
+			"level": 3,
+			"entries": [
+				"Valkyries of the Order of the Dawn channel the searing light of the sun and the pure brilliance of the heavens. They are beacons of hope on the battlefield, driving back the shadows and searing those who revel in darkness. Often devoted to deities of light, truth, or the sun, they are unwavering protectors of the innocent.",
+				"In combat, a Dawn Valkyrie is a blinding storm of radiant energy. Their strikes illuminate weaknesses, guiding their allies' blades. As they ascend in power, they can unleash blinding flares to defend themselves and ultimately erupt into terrifying supernovas that incinerate foes while shielding friends.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Radiant Strike|Valkyrie|ThroneOfLies|Dawn|ThroneOfLies|3"
+				}
+			]
+		},
+		{
+			"name": "Radiant Strike",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Dawn",
+			"subclassSource": "ThroneOfLies",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Order of the Dawn feature}",
+				"Your weapon channels the blinding light of the morning sun. Once on each of your turns when you hit a creature with a melee weapon attack, you can deal an extra {@damage 1d6} radiant damage.",
+				"The target glows with a mystical light until the start of your next turn. While glowing, the target sheds dim light in a 5-foot radius, cannot benefit from being invisible, and the next attack roll made against it has advantage."
+			]
+		},
+		{
+			"name": "Blinding Aegis",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Dawn",
+			"subclassSource": "ThroneOfLies",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Order of the Dawn feature}",
+				"You can conjure a flash of divine light to protect yourself. When a creature you can see within 30 feet of you targets you with an attack, you can use your {@action reaction|XPHB} to unleash a flare of radiance.",
+				"The attacker must make a Constitution saving throw against your Valkyrie spell save DC. On a failed save, the creature takes {@damage 2d6} radiant damage, and it has the {@condition blinded} condition until the end of its current turn, causing its attack to miss. On a successful save, it takes half as much damage and isn't blinded. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a {@variantrule long rest|XPHB}."
+			]
+		},
+		{
+			"name": "Sun's Champion",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Dawn",
+			"subclassSource": "ThroneOfLies",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Order of the Dawn feature}",
+				"The divine light within you shields you from harm and burns hotter than ever. You gain resistance to radiant damage.",
+				"In addition, the extra damage of your Radiant Strike feature increases to {@damage 2d6} radiant damage, and your melee weapon attacks ignore resistance to radiant damage."
+			]
+		},
+		{
+			"name": "Supernova",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Dawn",
+			"subclassSource": "ThroneOfLies",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Order of the Dawn feature}",
+				"You unleash the full, unfiltered wrath of the heavens. As an action, you erupt in a blinding explosion of radiant energy in a 30-foot radius centered on you.",
+				"Each enemy in that area must make a Constitution saving throw against your Valkyrie spell save DC. On a failed save, a creature takes {@damage 4d6} radiant damage and has the {@condition blinded} condition for 1 minute. On a successful save, it takes half as much damage and isn't blinded. A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+				"Additionally, friendly creatures within the radius are bolstered by the light, gaining {@variantrule temporary hit points|XPHB} equal to your Valkyrie level. Once you use this feature, you cannot do so again until you finish a {@variantrule long rest|XPHB}."
+			]
+		},
+		{
+			"name": "Order of the Stormbringer",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Stormbringer",
+			"subclassSource": "ThroneOfLies",
+			"level": 3,
+			"entries": [
+				"Valkyries who swear themselves to the Order of the Stormbringer embody the raw, untamed fury of the tempest. Reverent to gods of thunder, such as Thor, these warriors serve as the divine vanguard. Where they tread, the skies darken, and the air grows heavy with the scent of ozone and the promise of impending destruction.",
+				"In battle, a Stormbringer does not rely on subtlety or misdirection. Instead, they shatter enemy lines with overwhelming, elemental force. Their weapons crackle with chained lightning, and their strikes land with the deafening boom of thunder, scattering foes like leaves in a hurricane. To face a Valkyrie of this order is to stand defenseless before the storm.",
+				"Those who survive the booming shockwaves of a Stormbringer often speak of a blinding flash of light, followed by the terrifying realization that the gods themselves have laid claim to the battlefield.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Stormborn Strike|Valkyrie|ThroneOfLies|Stormbringer|ThroneOfLies|3"
+				}
+			]
+		},
+		{
+			"name": "Stormborn Strike",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Stormbringer",
+			"subclassSource": "ThroneOfLies",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Order of the Stormbringer feature}",
+				"You channel the unbridled fury of the storm into your weapons. Once on each of your turns when you hit a creature with a melee weapon attack, you can cause the attack to deal an extra {@damage 1d6} lightning damage.",
+				"Additionally, the sheer force of the thunderous impact forces the target to make a Strength saving throw against your Valkyrie spell save DC. On a failed save, the creature is pushed up to 10 feet away from you."
+			]
+		},
+		{
+			"name": "Storm Step",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Stormbringer",
+			"subclassSource": "ThroneOfLies",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Order of the Stormbringer feature}",
+				"You can temporarily merge your physical form with the storm. As a {@action bonus|XPHB} action, you transform into a bolt of lightning and magically teleport up to 30 feet to an unoccupied space you can see.",
+				"When you arrive, a deafening crack of thunder echoes around you. Each creature of your choice within 5 feet of your new space must make a Constitution saving throw against your Valkyrie spell save DC. On a failed save, a creature takes {@damage 2d6} thunder damage and is deafened until the end of its next turn. On a successful save, it takes half as much damage and is not deafened. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a {@variantrule long rest|XPHB}."
+			]
+		},
+		{
+			"name": "Call the Tempest",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Stormbringer",
+			"subclassSource": "ThroneOfLies",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Order of the Stormbringer feature}",
+				"The storm raging within your soul protects you and lashes out at your foes. You gain resistance to lightning and thunder damage.",
+				"Additionally, your lightning refuses to be contained. When you use your Stormborn Strike feature to deal lightning damage to a target, a bolt of residual energy arcs to a different creature of your choice that you can see within 15 feet of the original target. The second creature automatically takes lightning damage equal to your Wisdom modifier."
+			]
+		},
+		{
+			"name": "Wrath of the Thunderer",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Stormbringer",
+			"subclassSource": "ThroneOfLies",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Order of the Stormbringer feature}",
+				"You slam your weapon into the ground, unleashing the ultimate wrath of the storm gods. You can cast the {@spell destructive wave|XPHB} spell without expending a spell slot or providing components, with the following modification: the spell deals {@damage 5d6} thunder damage and {@damage 5d6} lightning damage (instead of radiant or necrotic).",
+				"Once you use this feature, you cannot do so again until you finish a {@variantrule long rest|XPHB}."
+			]
+		},
+		{
+			"name": "Order of the Trickster",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Trickster",
+			"subclassSource": "ThroneOfLies",
+			"level": 3,
+			"entries": [
+				"Valkyries of the Order of the Trickster embrace the cunning, silver-tongued nature of Loki. Where other orders bring roaring thunder or grim finality, these warriors bring confusion, shadows, and misdirection. They view the battlefield not as a place for simple brute force, but as a chessboard where the minds of their enemies can be turned against them.",
+				"In combat, a Trickster is a phantom. They leave shifting duplicates in their wake, vanish from sight in the blink of an eye, and strike from the shadows when least expected. Foes find themselves swinging at empty air, hitting nothing but mirror images, while the true Valkyrie delivers a fatal blow from behind. To fight a Trickster is to doubt your own senses.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Misdirection|Valkyrie|ThroneOfLies|Trickster|ThroneOfLies|3"
+				}
+			]
+		},
+		{
+			"name": "Misdirection",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Trickster",
+			"subclassSource": "ThroneOfLies",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Order of the Trickster feature}",
+				"You weave subtle illusions into your martial movements. Once on each of your turns when you hit a creature with a melee weapon attack, you can force the target to make a Wisdom saving throw against your Valkyrie spell save DC.",
+				"On a failed save the creature sees an illusionary world of trickery. Until the start of your next turn the Target has Disadvantage on Attack rolls made against other creatures than you."
+			]
+		},
+		{
+			"name": "Mirror Dance",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Trickster",
+			"subclassSource": "ThroneOfLies",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Order of the Trickster feature}",
+				"When a creature you can see targets you with an attack, you can use your {@action reaction|XPHB} to magically swap places with an illusion, teleporting up to 15 feet to an unoccupied space you can see.",
+				"The attack roll is then made against your duplicate instead of you. The duplicate vanishes immediately after the attack hits or misses. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a {@variantrule long rest|XPHB}."
+			]
+		},
+		{
+			"name": "Trickster's Shroud",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Trickster",
+			"subclassSource": "ThroneOfLies",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Order of the Trickster feature}",
+				"You can cloak yourself in Loki's shadows. As a {@action bonus|XPHB} action, you magically become invisible until the end of your current turn or until you hit a creature with an attack.",
+				"While you are invisible in this way, your movement speed is increased by 10 feet, and the first attack roll you make has advantage. If that attack hits, it deals an extra {@damage 2d6} psychic damage. Once you use this feature, you cannot do so again until you finish a {@variantrule short rest|XPHB} or {@variantrule long rest|XPHB}."
+			]
+		},
+		{
+			"name": "Master of Illusions",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Trickster",
+			"subclassSource": "ThroneOfLies",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Order of the Trickster feature}",
+				"You conjure three illusory duplicates of yourself, as if casting the {@spell mirror image|XPHB} spell without expending a spell slot.",
+				"Whenever an attack hits one of your duplicates and destroys it, the illusion erupts in a flash of colorful light and smoke. Each enemy within 5 feet of the destroyed duplicate must make a Constitution saving throw against your Valkyrie spell save DC. On a failed save, a creature takes {@damage 3d6} psychic damage and has the {@condition blinded} condition until the end of its next turn. On a successful save, it takes half as much damage and isn't blinded. Once you use this feature, you cannot do so again until you finish a {@variantrule long rest|XPHB}."
+			]
+		},
+		{
+			"name": "Order of the Underworld",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Underworld",
+			"subclassSource": "ThroneOfLies",
+			"level": 3,
+			"entries": [
+				"Valkyries of the Order of the Underworld serve Hel and the grim forces of death. They are the final arbiters of mortality, deciding who falls and who is allowed to cling to life. Unlike other orders that fight for glory or chaos, the Underworld Valkyries fight with inevitable, chilling certainty.",
+				"Their martial style is defined by endurance and life-draining necromancy. Every strike they deliver siphons warmth from their enemies, knitting their own wounds closed with stolen vitality. As they grow in power, they can summon spectral chains to bind their foes and project auras of pure decay. To battle an Underworld Valkyrie is to fight a war of attrition you cannot win.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Soul Strike|Valkyrie|ThroneOfLies|Underworld|ThroneOfLies|3"
+				}
+			]
+		},
+		{
+			"name": "Soul Strike",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Underworld",
+			"subclassSource": "ThroneOfLies",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Order of the Underworld feature}",
+				"Your blade hungers for the warmth of the living. Once on each of your turns when you hit a creature with a melee weapon attack, you can deal an extra {@damage 1d6} necrotic damage.",
+				"The necrotic energy siphons the target's life force, and you regain hit points equal to the necrotic damage dealt by this feature."
+			]
+		},
+		{
+			"name": "Spectral Reach",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Underworld",
+			"subclassSource": "ThroneOfLies",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Order of the Underworld feature}",
+				"You command the restless dead to drag your enemies down. As a {@action bonus|XPHB} action, choose one creature you can see within 30 feet of you. Spectral hands erupt from the ground to grab it.",
+				"The target must make a Strength saving throw against your Valkyrie spell save DC. On a failed save, it takes {@damage 2d6} necrotic damage and has the {@condition restrained} condition until the start of your next turn. On a successful save, it takes half as much damage and isn't restrained. You can use this feature a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a {@variantrule long rest|XPHB}."
+			]
+		},
+		{
+			"name": "Touch of Death",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Underworld",
+			"subclassSource": "ThroneOfLies",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Order of the Underworld feature}",
+				"You have spent so much time walking the line between life and death that the grave holds no terror for you. You gain resistance to necrotic damage.",
+				"In addition, the extra damage of your Soul Strike feature increases to {@damage 2d6} necrotic damage, and your melee weapon attacks ignore resistance to necrotic damage."
+			]
+		},
+		{
+			"name": "Hel's Domain",
+			"source": "ThroneOfLies",
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"subclassShortName": "Underworld",
+			"subclassSource": "ThroneOfLies",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Order of the Underworld feature}",
+				"You project an aura of absolute death. As an action, you unleash the chill of the underworld in a 30-foot radius centered on you. The aura moves with you and lasts for 1 minute.",
+				"For the duration, the area is considered difficult terrain for your enemies. Whenever an enemy starts its turn in the aura, it takes {@damage 3d6} necrotic damage. Additionally, any healing an enemy receives while within the aura is halved. Once you use this feature, you cannot do so again until you finish a {@variantrule long rest|XPHB}."
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Bifröst Cleave",
+			"source": "ThroneOfLies",
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You sweep your weapon through the air, unleashing a devastating wave of collapsing cosmic light. Each creature in a 30-foot cone originating from you must make a Dexterity saving throw. On a failed save, a creature takes {@damage 10d8} radiant damage and is {@condition blinded} until the end of your next turn. On a successful save, it takes half as much damage and isn't blinded."
+			]
+		},
+		{
+			"name": "Echo of Gungnir",
+			"source": "ThroneOfLies",
+			"level": 7,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You manifest a spectral replica of the Allfather's infallible spear and hurl it at a creature you can see within 120 feet. Make a ranged spell attack against the target. On a hit, the spear strikes with cosmic precision, dealing {@damage 10d8} force damage and physically pinning the creature's soul to its location.",
+				"The target is {@condition restrained}, its flying speed (if any) is reduced to 0, and any attempt it makes to magically teleport fails automatically. At the end of each of its turns, the restrained creature takes {@damage 3d8} force damage and must make a Strength saving throw. On a success, the target frees itself and the spell ends."
+			]
+		},
+		{
+			"name": "Twilight of the Gods",
+			"source": "ThroneOfLies",
+			"level": 8,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You unleash the final cataclysm upon a creature you can see within 30 feet. The target must make a Charisma saving throw. It takes {@damage 12d8} radiant or necrotic damage (your choice) on a failed save, or half as much damage on a successful one.",
+				"Immediately after the damage is dealt, all magical effects and spells of 7th level or lower currently affecting the target are dispelled. If the target is an Aberration, Celestial, Elemental, Fey, or Fiend, it is banished to its home plane if it failed the saving throw."
+			]
+		},
+		{
+			"name": "Judgment of the Norns",
+			"source": "ThroneOfLies",
+			"level": 9,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You channel the absolute authority of the Fateweavers to sever a creature's lifeline. Choose one creature you can see within 30 feet. The target must make a Constitution saving throw. It takes {@damage 15d8} radiant damage on a failed save, or half as much damage on a successful one. This damage ignores resistance.",
+				"If this damage reduces the target to 100 hit points or fewer, or if the target already had 100 hit points or fewer before the damage was applied, it dies instantly, its thread of fate permanently cut."
+			]
+		}
+	]
+}
