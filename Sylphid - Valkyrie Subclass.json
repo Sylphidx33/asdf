@@ -77,6 +77,7 @@
 				"default": [
 					"(a) a {@item greatsword|phb}, {@item scale mail|phb}, any simple melee weapon, an {@item explorer's pack|phb}, a {@item holy symbol|phb}, and 40 gp or (b) any martial melee weapon, {@item leather armor|phb}, 5 {@item javelin|phb|javelins}, a {@item priest's pack|phb}, a {@item holy symbol|phb}, and 60 gp or (c) 155 gp"
 				],
+				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
 				"defaultData": [
 					{
 						"a": [
@@ -277,61 +278,6 @@
 			"className": "Valkyrie",
 			"classSource": "ThroneOfLies",
 			"level": 1,
-			"additionalSpells": [
-				{
-					"expanded": {
-						"1": [
-							"booming blade|tce",
-							"green-flame blade|tce",
-							"guidance|phb",
-							"light|phb",
-							"mending|phb",
-							"resistance|phb",
-							"sacred flame|phb",
-							"thaumaturgy|phb",
-							"toll the dead|xge",
-							"word of radiance|xge",
-							"command|phb",
-							"cure wounds|phb",
-							"divine favor|phb",
-							"divine smite|xphb",
-							"searing smite|phb",
-							"shield|phb",
-							"thunderous smite|phb",
-							"zephyr strike|xge",
-							"branding smite|phb",
-							"fly|phb",
-							"haste|phb",
-							"mass healing word|phb",
-							"revivify|phb",
-							"spirit shroud|tce",
-							"thunder step|xge",
-							"banishment|phb",
-							"death ward|phb",
-							"freedom of movement|phb",
-							"staggering smite|phb",
-							"banishing smite|phb",
-							"greater restoration|phb",
-							"holy weapon|xge",
-							"steel wind strike|xge",
-							"bifröst cleave|ThroneOfLies",
-							"blade barrier|phb",
-							"heal|phb",
-							"word of recall|phb",
-							"crown of stars|xge",
-							"divine word|phb",
-							"echo of gungnir|ThroneOfLies",
-							"resurrection|phb",
-							"holy aura|phb",
-							"sunburst|phb",
-							"twilight of the gods|ThroneOfLies",
-							"foresight|phb",
-							"judgment of the norns|ThroneOfLies",
-							"mass heal|phb"
-						]
-					}
-				}
-			],
 			"entries": [
 				"As a conduit of divine and cosmic power, you can cast Valkyrie spells.",
 				{
@@ -374,7 +320,7 @@
 			"additionalSpells": [
 				{
 					"known": {
-						"1": [
+						"0": [
 							"true strike|phb"
 						]
 					}
@@ -853,6 +799,14 @@
 			"source": "ThroneOfLies",
 			"level": 6,
 			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Valkyrie",
+						"source": "ThroneOfLies"
+					}
+				]
+			},
 			"time": [
 				{
 					"number": 1,
@@ -884,6 +838,14 @@
 			"source": "ThroneOfLies",
 			"level": 7,
 			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Valkyrie",
+						"source": "ThroneOfLies"
+					}
+				]
+			},
 			"time": [
 				{
 					"number": 1,
@@ -921,6 +883,14 @@
 			"source": "ThroneOfLies",
 			"level": 8,
 			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Valkyrie",
+						"source": "ThroneOfLies"
+					}
+				]
+			},
 			"time": [
 				{
 					"number": 1,
@@ -953,6 +923,14 @@
 			"source": "ThroneOfLies",
 			"level": 9,
 			"school": "V",
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Valkyrie",
+						"source": "ThroneOfLies"
+					}
+				]
+			},
 			"time": [
 				{
 					"number": 1,
@@ -978,6 +956,62 @@
 			"entries": [
 				"You channel the absolute authority of the Fateweavers to sever a creature's lifeline. Choose one creature you can see within 30 feet. The target must make a Constitution saving throw. It takes {@damage 15d8} radiant damage on a failed save, or half as much damage on a successful one. This damage ignores resistance.",
 				"If this damage reduces the target to 100 hit points or fewer, or if the target already had 100 hit points or fewer before the damage was applied, it dies instantly, its thread of fate permanently cut."
+			]
+		}
+	],
+	"classSpells": [
+		{
+			"className": "Valkyrie",
+			"classSource": "ThroneOfLies",
+			"spells": [
+				"booming blade|tce",
+				"green-flame blade|tce",
+				"guidance|phb",
+				"light|phb",
+				"mending|phb",
+				"resistance|phb",
+				"sacred flame|phb",
+				"thaumaturgy|phb",
+				"toll the dead|xge",
+				"word of radiance|xge",
+				"true strike|phb",
+				"command|phb",
+				"cure wounds|phb",
+				"divine favor|phb",
+				"divine smite|xphb",
+				"searing smite|phb",
+				"shield|phb",
+				"thunderous smite|phb",
+				"zephyr strike|xge",
+				"branding smite|phb",
+				"fly|phb",
+				"haste|phb",
+				"mass healing word|phb",
+				"revivify|phb",
+				"spirit shroud|tce",
+				"thunder step|xge",
+				"banishment|phb",
+				"death ward|phb",
+				"freedom of movement|phb",
+				"staggering smite|phb",
+				"banishing smite|phb",
+				"greater restoration|phb",
+				"holy weapon|xge",
+				"steel wind strike|xge",
+				"bifröst cleave|ThroneOfLies",
+				"blade barrier|phb",
+				"heal|phb",
+				"word of recall|phb",
+				"crown of stars|xge",
+				"divine word|phb",
+				"echo of gungnir|ThroneOfLies",
+				"resurrection|phb",
+				"holy aura|phb",
+				"sunburst|phb",
+				"twilight of the gods|ThroneOfLies",
+				"foresight|phb",
+				"judgment of the norns|ThroneOfLies",
+				"mass heal|phb"
 			]
 		}
 	]
