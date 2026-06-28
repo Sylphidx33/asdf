@@ -76,7 +76,7 @@
 				"additionalFromBackground": true,
 				"default": [
 					"(a) a {@item greatsword|phb} and {@item scale mail|phb} and any simple melee weapon and an {@item explorer's pack|phb} or (b) any martial melee weapon and {@item leather armor|phb} and 5 {@item javelin|phb|javelins} and a {@item priest's pack|phb} or (c)",
-					"A {@item holy symbol|phb}",
+					"A {@item holy symbol|phb}"
 				],
 				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
 				"defaultData": [
@@ -84,17 +84,21 @@
 						"a": [
 							"greatsword|phb",
 							"scale mail|phb",
-							"equipmentType": "weaponSimpleMelee",
+							{
+								"equipmentType": "weaponSimpleMelee"
+							},
 							"explorer's pack|phb"
 						],
 						"b": [
 							{
-								"equipmentType": "weaponMartialMelee",
-								"leather armor|phb",
+								"equipmentType": "weaponMartialMelee"
+							},
+							"leather armor|phb",
+							{
 								"item": "javelin|phb",
-								"quantity": 5,
-								"priest's pack|phb"
-							}
+								"quantity": 5
+							},
+							"priest's pack|phb"
 						]
 					},
 					{
