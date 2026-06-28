@@ -77,8 +77,8 @@
 				"default": [
 					"(a) a {@item greatsword|phb} and {@item scale mail|phb} and any simple melee weapon and an {@item explorer's pack|phb} or (b) any martial melee weapon and {@item leather armor|phb} and 5 {@item javelin|phb|javelins} and a {@item priest's pack|phb} or (c)",
 					"A {@item holy symbol|phb}",
-					"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
 				],
+				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
 				"defaultData": [
 					{
 						"a": [
