@@ -81,7 +81,6 @@
 					"(a) an {@item explorer's pack|phb} or (b) a {@item priest's pack|phb}",
 					"A {@item holy symbol|phb}"
 				],
-				"goldAlternative": "155 gp",
 				"defaultData": [
 					{
 						"a": [
@@ -127,6 +126,9 @@
 							"holy symbol|phb"
 						]
 					}
+				],
+				"entries": [
+					"{@i Choose A, B, or C:} (A) {@item Explorer's Pack|PHB}, {@item Holy Symbol|PHB}, any simple melee weapon, {@item Greatsword|PHB}, {@item Holy Symbol|PHB}, {@item Scale Mail|PHB}, and 30 GP, (B) any martial melee weapon, 5x {@item Javelin|PHB}, {@item Leather Armor|PHB}, {@item Priest's Pack|PHB}, {@item Holy Symbol|PHB}, and 50 GP, or (C) 155 GP"
 				]
 			},
 			"multiclassing": {
@@ -146,21 +148,6 @@
 					]
 				}
 			},
-			"additionalSpells": [
-				{
-					"expanded": {
-						"0": ["booming blade|tce", "green-flame blade|tce", "guidance|phb", "light|phb", "mending|phb", "resistance|phb", "sacred flame|phb", "thaumaturgy|phb", "toll the dead|xge", "word of radiance|xge", "true strike|phb"],
-						"1": ["command|phb", "cure wounds|phb", "divine favor|phb", "divine smite|phb", "searing smite|phb", "shield|phb", "thunderous smite|phb", "zephyr strike|xge"],
-						"2": ["branding smite|phb", "fly|phb", "haste|phb", "mass healing word|phb", "revivify|phb", "spirit shroud|tce", "thunder step|xge"],
-						"4": ["banishment|phb", "death ward|phb", "freedom of movement|phb", "staggering smite|phb"],
-						"5": ["banishing smite|phb", "greater restoration|phb", "holy weapon|xge", "steel wind strike|xge"],
-						"6": ["bifröst cleave|ThroneOfLies", "blade barrier|phb", "heal|phb", "word of recall|phb"],
-						"7": ["crown of stars|xge", "divine word|phb", "echo of gungnir|ThroneOfLies", "resurrection|phb"],
-						"8": ["holy aura|phb", "sunburst|phb", "twilight of the gods|ThroneOfLies"],
-						"9": ["foresight|phb", "judgment of the norns|ThroneOfLies", "mass heal|phb"]
-					}
-				}
-			],
 			"classTableGroups": [
 				{
 					"colLabels": [
@@ -304,6 +291,61 @@
 			"className": "Valkyrie",
 			"classSource": "ThroneOfLies",
 			"level": 1,
+			"additionalSpells": [
+				{
+					"expanded": {
+						"1": [
+							"booming blade|tce",
+							"green-flame blade|tce",
+							"guidance|phb",
+							"light|phb",
+							"mending|phb",
+							"resistance|phb",
+							"sacred flame|phb",
+							"thaumaturgy|phb",
+							"toll the dead|xge",
+							"word of radiance|xge",
+							"command|phb",
+							"cure wounds|phb",
+							"divine favor|phb",
+							"divine smite|xphb",
+							"searing smite|phb",
+							"shield|phb",
+							"thunderous smite|phb",
+							"zephyr strike|xge",
+							"branding smite|phb",
+							"fly|phb",
+							"haste|phb",
+							"mass healing word|phb",
+							"revivify|phb",
+							"spirit shroud|tce",
+							"thunder step|xge",
+							"banishment|phb",
+							"death ward|phb",
+							"freedom of movement|phb",
+							"staggering smite|phb",
+							"banishing smite|phb",
+							"greater restoration|phb",
+							"holy weapon|xge",
+							"steel wind strike|xge",
+							"bifröst cleave|ThroneOfLies",
+							"blade barrier|phb",
+							"heal|phb",
+							"word of recall|phb",
+							"crown of stars|xge",
+							"divine word|phb",
+							"echo of gungnir|ThroneOfLies",
+							"resurrection|phb",
+							"holy aura|phb",
+							"sunburst|phb",
+							"twilight of the gods|ThroneOfLies",
+							"foresight|phb",
+							"judgment of the norns|ThroneOfLies",
+							"mass heal|phb"
+						]
+					}
+				}
+			],
 			"entries": [
 				"As a conduit of divine and cosmic power, you can cast Valkyrie spells.",
 				{
@@ -343,6 +385,15 @@
 			"className": "Valkyrie",
 			"classSource": "ThroneOfLies",
 			"level": 1,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"true strike|phb"
+						]
+					}
+				}
+			],
 			"entries": [
 				"Your divine purpose naturally aligns your strikes with fate itself. You learn the {@spell true strike|XPHB} cantrip, which counts as a Valkyrie spell for you and does not count against your number of cantrips known."
 			]
