@@ -75,10 +75,8 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a {@item greatsword|phb} and {@item scale mail|phb} and any simple melee weapon and an {@item explorer's pack|phb} or (b) any martial melee weapon and {@item leather armor|phb} and 5 {@item javelin|phb|javelins} and a {@item priest's pack|phb} or (c)",
-					"A {@item holy symbol|phb}"
+					"(a) a {@item greatsword|phb}, {@item scale mail|phb}, any simple melee weapon, an {@item explorer's pack|phb}, a {@item holy symbol|phb}, and 40 gp or (b) any martial melee weapon, {@item leather armor|phb}, 5 {@item javelin|phb|javelins}, a {@item priest's pack|phb}, a {@item holy symbol|phb}, and 60 gp or (c) 155 gp"
 				],
-				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
 				"defaultData": [
 					{
 						"a": [
@@ -87,7 +85,11 @@
 							{
 								"equipmentType": "weaponSimpleMelee"
 							},
-							"explorer's pack|phb"
+							"explorer's pack|phb",
+							"holy symbol|phb",
+							{
+								"value": 4000
+							}
 						],
 						"b": [
 							{
@@ -98,17 +100,21 @@
 								"item": "javelin|phb",
 								"quantity": 5
 							},
-							"priest's pack|phb"
-						]
-					},
-					{
-						"_": [
-							"holy symbol|phb"
+							"priest's pack|phb",
+							"holy symbol|phb",
+							{
+								"value": 6000
+							}
+						],
+						"c": [
+							{
+								"value": 15500
+							}
 						]
 					}
 				],
 				"entries": [
-					"{@i Choose A, B, or C:} (A) {@item Explorer's Pack|PHB}, {@item Holy Symbol|PHB}, any simple melee weapon, {@item Greatsword|PHB}, {@item Holy Symbol|PHB}, {@item Scale Mail|PHB}, and 30 GP, (B) any martial melee weapon, 5x {@item Javelin|PHB}, {@item Leather Armor|PHB}, {@item Priest's Pack|PHB}, {@item Holy Symbol|PHB}, and 50 GP, or (C) 155 GP"
+					"{@i Choose A, B, or C:} (A) {@item Explorer's Pack|PHB}, {@item Holy Symbol|PHB}, any simple melee weapon, {@item Greatsword|PHB}, {@item Scale Mail|PHB}, and 40 GP, (B) any martial melee weapon, 5x {@item Javelin|PHB}, {@item Leather Armor|PHB}, {@item Priest's Pack|PHB}, {@item Holy Symbol|PHB}, and 60 GP, or (C) 155 GP"
 				]
 			},
 			"multiclassing": {
